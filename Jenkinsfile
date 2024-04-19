@@ -35,10 +35,10 @@ pipeline {
             }
             post {
                 success {
-                    slackSend (channel: '#ip1',color: '#00FF00', message: "SUCCESS: Checkout Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1',color: '#00FF00', message: "SUCCESS: Checkout Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                 }
                 failure {
-                    slackSend (channel: '#ip1',color: '#FF0000', message: "SUCCESS: Checkout Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1',color: '#FF0000', message: "SUCCESS: Checkout Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                 }
             }
         }
@@ -49,10 +49,10 @@ pipeline {
             }
             post {
                 success {
-                    slackSend (channel: '#ip1', color: '#00FF00', message: "SUCCESS: Build Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1', color: '#00FF00', message: "SUCCESS: Build Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                 }
                 failure {
-                    slackSend (channel: '#ip1', color: '#FF0000', message: "FAILURE: Build Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1', color: '#FF0000', message: "FAILURE: Build Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                 }
             }
         }
@@ -63,10 +63,10 @@ pipeline {
             }
             post {
                 success {
-                    slackSend (channel: '#ip1', color: '#00FF00', message: "SUCCESS: Test Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1', color: '#00FF00', message: "SUCCESS: Test Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                 }
                 failure {
-                    slackSend (channel: '#ip1', color: '#FF0000', message: "FAILURE: Test Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1', color: '#FF0000', message: "FAILURE: Test Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                     emailext attachLog: true, body: EMAIL_BODY, subject: EMAIL_SUBJECT_FAILURE, to: EMAIL_RECEPIENT
                 }
             }
@@ -78,10 +78,10 @@ pipeline {
             }
             post {
                 success {
-                    slackSend (channel: '#ip1', color: '#00FF00', message: "SUCCESS: Deploy Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1', color: '#00FF00', message: "SUCCESS: Deploy Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                 }
                 failure {
-                    slackSend (channel: '#ip1', color: '#FF0000', message: "FAILURE: Deploy Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-b4yh.onrender.com)")
+                    slackSend (channel: '#ip1', color: '#FF0000', message: "FAILURE: Deploy Stage of Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (https://gallery-p9za.onrender.com")
                 }
             }
         }

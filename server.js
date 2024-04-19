@@ -7,7 +7,6 @@ const config = require('./_config');
 // Define routes
 let index = require('./routes/index');
 let image = require('./routes/image');
-const config = require('./_config');
 
 // Initializing the app
 const app = express();
